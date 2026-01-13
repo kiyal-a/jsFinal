@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BabiBNB – Offres</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50">
+
+    <header class="bg-white shadow-sm  border-b">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-start">
+                <div class="flex items-center gap-3">
+                    <a href="index.html"><img src="img/logo.png" class="w-16 h-16" /></a>
+                </div>
+
+                <div class="flex-1 text-center mx-8">
+                    <p class="text-center text-black mb-2">Votre compagnon pour trouver l'hébergement idéal</p>
+                    <div class="mr-[209px]">
+                        <span class="text-sm text-black mr-2">Nombre d'offres :</span>
+                        <span id="count"
+                            class="inline-block bg-blue-500 text-white font-bold px-3 py-1 rounded-full text-sm">0</span>
+                    </div>
+                </div>
+
+                <a href="publier.html"
+                    class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-5 py-2 rounded-lg transition">Publier
+                    une offre</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-10">
+        <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">LISTE DES OFFRES DISPONIBLES</h2>
+
+        <div id="offers" class="grid md:grid-cols-3 gap-8"></div>
+    </main>
+
+    <footer class="bg-gray-100 border-t text-center text-gray-600 py-8 mt-12">
+        © 2026 BabiBNB. Tous droits réservés.
+    </footer>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
