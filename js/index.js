@@ -152,7 +152,7 @@ if (publishForm) {
       location: document.getElementById('location').value,
     };
 
-    offers.push(newOffer);
+    offers.unshift(newOffer);
     localStorage.setItem('offers', JSON.stringify(offers));
     
     
