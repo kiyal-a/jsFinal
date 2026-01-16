@@ -1,41 +1,39 @@
+let offers = JSON.parse(localStorage.getItem('offers'));
 
-let offers = localStorage.getItem('offers');
-
-if (offers === null) {
-  
+if (!offers || offers.length === 0) {
   offers = [
     {
       type: 'Studio',
-      title: 'reiciendis consectetur nulla',
-      details: 'Nemo nesciunt rerum magni impedit doloremaue ab dolore. Cupiditate dicta iste. Facere eos magnam quo...',
-      image: 'https://images.unsplash.com/photo-15026722?w=400&h=300&fit=crop',
+      title: 'Résidence Cocody',
+      details: 'Studio moderne et lumineux, proche de toutes commodités.',
+      image: 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800',
       price: '300000',
-      commune: 'Abidjan',
-      location: 'Cocody'
+      commune: 'Cocody',
+      location: 'Riviera'
     },
     {
-      type: 'Studio',
-      title: 'Studio Mbadon',
-      details: 'Bien situé...',
-      image: 'https://images.unsplash.com/photo-15026722?w=400&h=300&fit=crop',
-      price: '150000',
-      commune: 'Abidjan',
-      location: 'Yopougon'
+      type: 'Appartement',
+      title: 'Appartement Yopougon',
+      details: 'Appartement spacieux dans un quartier calme.',
+      image: 'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800',
+      price: '200000',
+      commune: 'Yopougon',
+      location: 'Selmer'
     },
     {
-      type: 'Studio',
-      title: '3 pièces Angré 8e tranche',
-      details: 'Bien situé et avec beaucoup d\'avantages...',
-      image: 'https://images.unsplash.com/photo-15026722?w=400&h=300&fit=crop',
+      type: 'Maison',
+      title: 'Maison familiale Angré',
+      details: 'Maison idéale pour une famille avec parking.',
+      image: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=800',
       price: '800000',
-      commune: 'Abidjan',
+      commune: 'Cocody',
       location: 'Angré 8e tranche'
     }
   ];
+
   localStorage.setItem('offers', JSON.stringify(offers));
-} else {
-  offers = JSON.parse(offers);
 }
+
 
 
 let list = document.getElementById('offers');
