@@ -14,7 +14,7 @@
         <div class="max-w-7xl mx-auto px-6 py-4">
             <div class="flex justify-between items-start">
                 <div class="flex items-center gap-3">
-                   <a href="index.html"><img src="img/logo.png" class="w-26 h-20" /></a>
+                    <a href="index.html"><img src="img/logo.png" class="w-16 h-16" /></a>
                 </div>
 
                 <div class="flex-1 text-center mx-8">
@@ -27,7 +27,7 @@
                 </div>
 
                 <a href="index.html"
-                    class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-5 py-2 rounded-lg transition">Retour
+                    class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-5 py-2 rounded-lg transition">   Retour
                     a la page d'accueil</a>
             </div>
         </div>
@@ -40,23 +40,30 @@
 
                 <form id="publishForm" class="space-y-4">
 
-                    <div>
-                        <label class="block text-sm font-semibold text-gray-700 mb-1">Type de bien <span
-                                class="text-red-500">*</span></label>
-                        <select id="type" class="w-full border p-2 rounded" required>
-                            <option value="">Choisissez un type de bien</option>
-                            <option>Studio</option>
-                            <option>Appartement</option>
-                            <option>Maison</option>
-                        </select>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-1">
+                                Type de bien <span class="text-red-500">*</span>
+                            </label>
+                            <select id="type" class="w-full border p-2 rounded" required>
+                                <option value="">Choisissez un type de bien</option>
+                                <option>Studio</option>
+                                <option>Appartement</option>
+                                <option>Maison</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-1">
+                                Titre de l'offre <span class="text-red-500">*</span>
+                            </label>
+                            <input id="title" type="text" placeholder="Titre de l'offre"
+                                class="w-full border p-2 rounded" required>
+                        </div>
+
                     </div>
 
-                    <div>
-                        <label class="block text-sm font-semibold text-gray-700 mb-1">Titre de l'offre <span
-                                class="text-red-500">*</span></label>
-                        <input id="title" type="text" placeholder="Titre de l'offre" class="w-full border p-2 rounded"
-                            required>
-                    </div>
 
                     <div>
                         <label class="block text-sm font-semibold text-gray-700 mb-1">Détails du bien <span
@@ -83,19 +90,8 @@
                         <div>
                             <label class="block text-sm font-semibold text-gray-700 mb-1">Commune <span
                                     class="text-red-500">*</span></label>
-                            <select id="commune" class="w-full border p-2 rounded" required>
-                                <option value="">Choisissez une commune</option>
-                                <option>Cocody</option>
-                                <option>Yopougon</option>
-                                <option>Marcory</option>
-                                <option>Treichville</option>
-                                <option>Plateau</option>
-                                <option>Koumassi</option>
-                                <option>Abobo</option>
-                                <option>Attécoubé</option>
-                                <option>Port-Bouët</option>
-                            </select>
-
+                            <input id="commune" type="text" placeholder="Commune" class="w-full border p-2 rounded"
+                                required>
                         </div>
                         <div>
                             <label class="block text-sm font-semibold text-gray-700 mb-1">Emplacement <span
